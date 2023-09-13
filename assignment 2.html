@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c97d7de2635e412abb4558cd74bb0d1c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="assignment-2" class="cell markdown" id="N5Rb7CXguFYh">
+<h1><strong>ASSIGNMENT-2</strong></h1>
+</section>
+<div class="cell markdown" id="02PjIYmunMSM">
+<p>1<strong>.import the necessar</strong>y <strong>bold text</strong>
+<strong>libraries</strong></p>
+</div>
+<div class="cell code" id="3TtIPkIqipUH">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+</div>
+<div class="cell markdown" id="cfJu6FwOnSA6">
+<p><strong>2.import the</strong> <strong>dataset</strong></p>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="RbQf-NDpnKhd" data-outputId="37aa9de0-4b1f-473b-a490-a64dec2a3f55">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sns.get_dataset_names())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>[&#39;anagrams&#39;, &#39;anscombe&#39;, &#39;attention&#39;, &#39;brain_networks&#39;, &#39;car_crashes&#39;, &#39;diamonds&#39;, &#39;dots&#39;, &#39;dowjones&#39;, &#39;exercise&#39;, &#39;flights&#39;, &#39;fmri&#39;, &#39;geyser&#39;, &#39;glue&#39;, &#39;healthexp&#39;, &#39;iris&#39;, &#39;mpg&#39;, &#39;penguins&#39;, &#39;planets&#39;, &#39;seaice&#39;, &#39;taxis&#39;, &#39;tips&#39;, &#39;titanic&#39;]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="lEantqj0nw-b" data-outputId="493f3a13-f192-4c99-b1ca-a3a84336f42e">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>sns.load_dataset(<span class="st">&#39;car_crashes&#39;</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+
+  <div id="df-a4f1643d-124f-4fed-9657-baf60760c387" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total</th>
+      <th>speeding</th>
+      <th>alcohol</th>
+      <th>not_distracted</th>
+      <th>no_previous</th>
+      <th>ins_premium</th>
+      <th>ins_losses</th>
+      <th>abbrev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18.8</td>
+      <td>7.332</td>
+      <td>5.640</td>
+      <td>18.048</td>
+      <td>15.040</td>
+      <td>784.55</td>
+      <td>145.08</td>
+      <td>AL</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>18.1</td>
+      <td>7.421</td>
+      <td>4.525</td>
+      <td>16.290</td>
+      <td>17.014</td>
+      <td>1053.48</td>
+      <td>133.93</td>
+      <td>AK</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>18.6</td>
+      <td>6.510</td>
+      <td>5.208</td>
+      <td>15.624</td>
+      <td>17.856</td>
+      <td>899.47</td>
+      <td>110.35</td>
+      <td>AZ</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>22.4</td>
+      <td>4.032</td>
+      <td>5.824</td>
+      <td>21.056</td>
+      <td>21.280</td>
+      <td>827.34</td>
+      <td>142.39</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12.0</td>
+      <td>4.200</td>
+      <td>3.360</td>
+      <td>10.920</td>
+      <td>10.680</td>
+      <td>878.41</td>
+      <td>165.63</td>
+      <td>CA</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>13.6</td>
+      <td>5.032</td>
+      <td>3.808</td>
+      <td>10.744</td>
+      <td>12.920</td>
+      <td>835.50</td>
+      <td>139.91</td>
+      <td>CO</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10.8</td>
+      <td>4.968</td>
+      <td>3.888</td>
+      <td>9.396</td>
+      <td>8.856</td>
+      <td>1068.73</td>
+      <td>167.02</td>
+      <td>CT</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>16.2</td>
+      <td>6.156</td>
+      <td>4.860</td>
+      <td>14.094</td>
+      <td>16.038</td>
+      <td>1137.87</td>
+      <td>151.48</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>5.9</td>
+      <td>2.006</td>
+      <td>1.593</td>
+      <td>5.900</td>
+      <td>5.900</td>
+      <td>1273.89</td>
+      <td>136.05</td>
+      <td>DC</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17.9</td>
+      <td>3.759</td>
+      <td>5.191</td>
+      <td>16.468</td>
+      <td>16.826</td>
+      <td>1160.13</td>
+      <td>144.18</td>
+      <td>FL</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>15.6</td>
+      <td>2.964</td>
+      <td>3.900</td>
+      <td>14.820</td>
+      <td>14.508</td>
+      <td>913.15</td>
+      <td>142.80</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>17.5</td>
+      <td>9.450</td>
+      <td>7.175</td>
+      <td>14.350</td>
+      <td>15.225</td>
+      <td>861.18</td>
+      <td>120.92</td>
+      <td>HI</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>15.3</td>
+      <td>5.508</td>
+      <td>4.437</td>
+      <td>13.005</td>
+      <td>14.994</td>
+      <td>641.96</td>
+      <td>82.75</td>
+      <td>ID</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>12.8</td>
+      <td>4.608</td>
+      <td>4.352</td>
+      <td>12.032</td>
+      <td>12.288</td>
+      <td>803.11</td>
+      <td>139.15</td>
+      <td>IL</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14.5</td>
+      <td>3.625</td>
+      <td>4.205</td>
+      <td>13.775</td>
+      <td>13.775</td>
+      <td>710.46</td>
+      <td>108.92</td>
+      <td>IN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15.7</td>
+      <td>2.669</td>
+      <td>3.925</td>
+      <td>15.229</td>
+      <td>13.659</td>
+      <td>649.06</td>
+      <td>114.47</td>
+      <td>IA</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17.8</td>
+      <td>4.806</td>
+      <td>4.272</td>
+      <td>13.706</td>
+      <td>15.130</td>
+      <td>780.45</td>
+      <td>133.80</td>
+      <td>KS</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>21.4</td>
+      <td>4.066</td>
+      <td>4.922</td>
+      <td>16.692</td>
+      <td>16.264</td>
+      <td>872.51</td>
+      <td>137.13</td>
+      <td>KY</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>20.5</td>
+      <td>7.175</td>
+      <td>6.765</td>
+      <td>14.965</td>
+      <td>20.090</td>
+      <td>1281.55</td>
+      <td>194.78</td>
+      <td>LA</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>15.1</td>
+      <td>5.738</td>
+      <td>4.530</td>
+      <td>13.137</td>
+      <td>12.684</td>
+      <td>661.88</td>
+      <td>96.57</td>
+      <td>ME</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>12.5</td>
+      <td>4.250</td>
+      <td>4.000</td>
+      <td>8.875</td>
+      <td>12.375</td>
+      <td>1048.78</td>
+      <td>192.70</td>
+      <td>MD</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>8.2</td>
+      <td>1.886</td>
+      <td>2.870</td>
+      <td>7.134</td>
+      <td>6.560</td>
+      <td>1011.14</td>
+      <td>135.63</td>
+      <td>MA</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>14.1</td>
+      <td>3.384</td>
+      <td>3.948</td>
+      <td>13.395</td>
+      <td>10.857</td>
+      <td>1110.61</td>
+      <td>152.26</td>
+      <td>MI</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>9.6</td>
+      <td>2.208</td>
+      <td>2.784</td>
+      <td>8.448</td>
+      <td>8.448</td>
+      <td>777.18</td>
+      <td>133.35</td>
+      <td>MN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>17.6</td>
+      <td>2.640</td>
+      <td>5.456</td>
+      <td>1.760</td>
+      <td>17.600</td>
+      <td>896.07</td>
+      <td>155.77</td>
+      <td>MS</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>16.1</td>
+      <td>6.923</td>
+      <td>5.474</td>
+      <td>14.812</td>
+      <td>13.524</td>
+      <td>790.32</td>
+      <td>144.45</td>
+      <td>MO</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>21.4</td>
+      <td>8.346</td>
+      <td>9.416</td>
+      <td>17.976</td>
+      <td>18.190</td>
+      <td>816.21</td>
+      <td>85.15</td>
+      <td>MT</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>14.9</td>
+      <td>1.937</td>
+      <td>5.215</td>
+      <td>13.857</td>
+      <td>13.410</td>
+      <td>732.28</td>
+      <td>114.82</td>
+      <td>NE</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>14.7</td>
+      <td>5.439</td>
+      <td>4.704</td>
+      <td>13.965</td>
+      <td>14.553</td>
+      <td>1029.87</td>
+      <td>138.71</td>
+      <td>NV</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>11.6</td>
+      <td>4.060</td>
+      <td>3.480</td>
+      <td>10.092</td>
+      <td>9.628</td>
+      <td>746.54</td>
+      <td>120.21</td>
+      <td>NH</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>11.2</td>
+      <td>1.792</td>
+      <td>3.136</td>
+      <td>9.632</td>
+      <td>8.736</td>
+      <td>1301.52</td>
+      <td>159.85</td>
+      <td>NJ</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>18.4</td>
+      <td>3.496</td>
+      <td>4.968</td>
+      <td>12.328</td>
+      <td>18.032</td>
+      <td>869.85</td>
+      <td>120.75</td>
+      <td>NM</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>12.3</td>
+      <td>3.936</td>
+      <td>3.567</td>
+      <td>10.824</td>
+      <td>9.840</td>
+      <td>1234.31</td>
+      <td>150.01</td>
+      <td>NY</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>16.8</td>
+      <td>6.552</td>
+      <td>5.208</td>
+      <td>15.792</td>
+      <td>13.608</td>
+      <td>708.24</td>
+      <td>127.82</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>23.9</td>
+      <td>5.497</td>
+      <td>10.038</td>
+      <td>23.661</td>
+      <td>20.554</td>
+      <td>688.75</td>
+      <td>109.72</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>14.1</td>
+      <td>3.948</td>
+      <td>4.794</td>
+      <td>13.959</td>
+      <td>11.562</td>
+      <td>697.73</td>
+      <td>133.52</td>
+      <td>OH</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>19.9</td>
+      <td>6.368</td>
+      <td>5.771</td>
+      <td>18.308</td>
+      <td>18.706</td>
+      <td>881.51</td>
+      <td>178.86</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>12.8</td>
+      <td>4.224</td>
+      <td>3.328</td>
+      <td>8.576</td>
+      <td>11.520</td>
+      <td>804.71</td>
+      <td>104.61</td>
+      <td>OR</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>18.2</td>
+      <td>9.100</td>
+      <td>5.642</td>
+      <td>17.472</td>
+      <td>16.016</td>
+      <td>905.99</td>
+      <td>153.86</td>
+      <td>PA</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>11.1</td>
+      <td>3.774</td>
+      <td>4.218</td>
+      <td>10.212</td>
+      <td>8.769</td>
+      <td>1148.99</td>
+      <td>148.58</td>
+      <td>RI</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>23.9</td>
+      <td>9.082</td>
+      <td>9.799</td>
+      <td>22.944</td>
+      <td>19.359</td>
+      <td>858.97</td>
+      <td>116.29</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>19.4</td>
+      <td>6.014</td>
+      <td>6.402</td>
+      <td>19.012</td>
+      <td>16.684</td>
+      <td>669.31</td>
+      <td>96.87</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>19.5</td>
+      <td>4.095</td>
+      <td>5.655</td>
+      <td>15.990</td>
+      <td>15.795</td>
+      <td>767.91</td>
+      <td>155.57</td>
+      <td>TN</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>19.4</td>
+      <td>7.760</td>
+      <td>7.372</td>
+      <td>17.654</td>
+      <td>16.878</td>
+      <td>1004.75</td>
+      <td>156.83</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>11.3</td>
+      <td>4.859</td>
+      <td>1.808</td>
+      <td>9.944</td>
+      <td>10.848</td>
+      <td>809.38</td>
+      <td>109.48</td>
+      <td>UT</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>13.6</td>
+      <td>4.080</td>
+      <td>4.080</td>
+      <td>13.056</td>
+      <td>12.920</td>
+      <td>716.20</td>
+      <td>109.61</td>
+      <td>VT</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>12.7</td>
+      <td>2.413</td>
+      <td>3.429</td>
+      <td>11.049</td>
+      <td>11.176</td>
+      <td>768.95</td>
+      <td>153.72</td>
+      <td>VA</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>10.6</td>
+      <td>4.452</td>
+      <td>3.498</td>
+      <td>8.692</td>
+      <td>9.116</td>
+      <td>890.03</td>
+      <td>111.62</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>23.8</td>
+      <td>8.092</td>
+      <td>6.664</td>
+      <td>23.086</td>
+      <td>20.706</td>
+      <td>992.61</td>
+      <td>152.56</td>
+      <td>WV</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>13.8</td>
+      <td>4.968</td>
+      <td>4.554</td>
+      <td>5.382</td>
+      <td>11.592</td>
+      <td>670.31</td>
+      <td>106.62</td>
+      <td>WI</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>17.4</td>
+      <td>7.308</td>
+      <td>5.568</td>
+      <td>14.094</td>
+      <td>15.660</td>
+      <td>791.14</td>
+      <td>122.04</td>
+      <td>WY</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a4f1643d-124f-4fed-9657-baf60760c387')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a4f1643d-124f-4fed-9657-baf60760c387 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a4f1643d-124f-4fed-9657-baf60760c387');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-53a6ea22-6d4b-49bd-b5ac-d011cb07a344">
+  <button class="colab-df-quickchart" onclick="quickchart('df-53a6ea22-6d4b-49bd-b5ac-d011cb07a344')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-53a6ea22-6d4b-49bd-b5ac-d011cb07a344 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:36}"
+id="GbREPGChoH_-" data-outputId="6646d22b-c162-494d-aa95-05157c4db253">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sns.__version__</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;type&quot;</span><span class="fu">:</span><span class="st">&quot;string&quot;</span><span class="fu">}</span></span></code></pre></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="hVLDnjuGoIMc" data-outputId="4c2bd3a3-1c0f-40e8-cb21-c43f49dc72f4">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 51 entries, 0 to 50
+Data columns (total 8 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   total           51 non-null     float64
+ 1   speeding        51 non-null     float64
+ 2   alcohol         51 non-null     float64
+ 3   not_distracted  51 non-null     float64
+ 4   no_previous     51 non-null     float64
+ 5   ins_premium     51 non-null     float64
+ 6   ins_losses      51 non-null     float64
+ 7   abbrev          51 non-null     object 
+dtypes: float64(7), object(1)
+memory usage: 3.3+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="0asupOXmspVc">
+<p>Pie Charts</p>
+</div>
+<div class="cell code" data-execution_count="33"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:438}"
+id="xABlB9E4sro4" data-outputId="262b3e45-672f-435c-92eb-91e87f5c1485">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>labels<span class="op">=</span>[<span class="st">&quot;total&quot;</span>,<span class="st">&quot;speeding&quot;</span>,<span class="st">&quot;alcohol&quot;</span>,<span class="st">&quot;not_distracted&quot;</span>]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>numbers<span class="op">=</span>[<span class="dv">75</span>,<span class="dv">70</span>,<span class="dv">80</span>,<span class="dv">60</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure()</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>axes1<span class="op">=</span>fig.add_axes([<span class="fl">0.1</span>,<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.8</span>])</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>axes1.pie(numbers,labels<span class="op">=</span>labels,autopct<span class="op">=</span><span class="st">&quot;</span><span class="sc">%0.2f%%</span><span class="st">&quot;</span>,colors<span class="op">=</span>[<span class="st">&quot;orange&quot;</span>,<span class="st">&quot;pink&quot;</span>,<span class="st">&quot;purple&quot;</span>,<span class="st">&quot;red&quot;</span>])</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>axes1.legend()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="33">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7f0cf2a23370&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/21e809b082f3594c3ca1640db2920cedc74d4c31.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="34"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:563}"
+id="3zQo1v_ns-cJ" data-outputId="c2bdac53-5746-4a17-e0e5-cb664cedd348">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Explode<span class="op">=</span>[<span class="fl">0.5</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="fl">0.2</span>]</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.pie(numbers,labels<span class="op">=</span>labels,explode<span class="op">=</span>Explode)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>([&lt;matplotlib.patches.Wedge at 0x7f0cf29307c0&gt;,
+  &lt;matplotlib.patches.Wedge at 0x7f0cf29306d0&gt;,
+  &lt;matplotlib.patches.Wedge at 0x7f0cf2931090&gt;,
+  &lt;matplotlib.patches.Wedge at 0x7f0cf2931510&gt;],
+ [Text(1.0836504797969189, 1.1771582891165944, &#39;total&#39;),
+  Text(-0.8295173176268907, 0.7224271726320158, &#39;speeding&#39;),
+  Text(-0.6514587095050077, -0.8863416665203493, &#39;alcohol&#39;),
+  Text(1.0258827330394034, -0.7984764355017653, &#39;not_distracted&#39;)])</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/5f2e0f125e165ae9b1f2a7e9ff85897000a2d0cd.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}"
+id="-ia_6td5oIO1" data-outputId="e910ba36-8d9b-482b-c6a1-86b1dac6e172">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;speeding&quot;</span>,data<span class="op">=</span>df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+<pre><code>&lt;Axes: xlabel=&#39;total&#39;, ylabel=&#39;speeding&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/0e60961d5615d44087adfce5f24214f0c0753c89.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="D36jwUSOoyRK">
+<p>Inference=from the plot we can say that as bill amount increases tip
+is aslo increasing</p>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}"
+id="uFNwldVPoISZ" data-outputId="f1f21fcd-b509-43b8-977d-16406efece2d">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,data<span class="op">=</span>df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<pre><code>&lt;Axes: xlabel=&#39;total&#39;, ylabel=&#39;alcohol&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/f6daa53f1bf1a0feea2ec69717e1dfc4b6480340.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="13"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:553}"
+id="bcRncJYVoIYt" data-outputId="70cbebf8-6ccd-4c57-d17b-dc68525800ae">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,data<span class="op">=</span>df,ci<span class="op">=</span><span class="va">None</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-13-f54671d9c2d5&gt;:1: FutureWarning: 
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+  sns.lineplot(x=&quot;total&quot;,y=&quot;alcohol&quot;,data=df,ci=None)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="13">
+<pre><code>&lt;Axes: xlabel=&#39;total&#39;, ylabel=&#39;alcohol&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/3c22532e6b6fa08bd2f7dfa5e1df7f81f8874448.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:657}"
+id="g6CfyVufoIbO" data-outputId="02e2fc08-35b3-4393-e5aa-4206b2189596">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sns.distplot(df[<span class="st">&quot;speeding&quot;</span>])</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-14-8ecb7fd34a3c&gt;:1: UserWarning: 
+
+`distplot` is a deprecated function and will be removed in seaborn v0.14.0.
+
+Please adapt your code to use either `displot` (a figure-level function with
+similar flexibility) or `histplot` (an axes-level function for histograms).
+
+For a guide to updating your code to use the new functions, please see
+https://gist.github.com/mwaskom/de44147ed2974457ad6372750bbe5751
+
+  sns.distplot(df[&quot;speeding&quot;])
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="14">
+<pre><code>&lt;Axes: xlabel=&#39;speeding&#39;, ylabel=&#39;Density&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/04dfcdb6a120f519a38558ed452dd4894c61a330.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="0XoDiL9Tpa5G">
+<p><strong>Relation</strong> <strong>plot</strong></p>
+</div>
+<div class="cell code" data-execution_count="19"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:523}"
+id="JSMQIa8ooIey" data-outputId="572406f0-d2f9-485b-c504-f893098c062a">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>sns.relplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;speeding&quot;</span>,data<span class="op">=</span>df,hue<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x7f0cff8f5450&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/ea1f3b12875b618a769661efe3c9854c5180a317.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="wGzqmJ1qqMqL" data-outputId="65db1031-d4e2-41ac-f0ab-28424dd23331">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;alcohol&quot;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>5.208     2
+5.640     1
+4.218     1
+4.704     1
+3.480     1
+3.136     1
+4.968     1
+3.567     1
+10.038    1
+4.794     1
+5.771     1
+3.328     1
+5.642     1
+9.799     1
+9.416     1
+6.402     1
+5.655     1
+7.372     1
+1.808     1
+4.080     1
+3.429     1
+3.498     1
+6.664     1
+4.554     1
+5.215     1
+5.474     1
+4.525     1
+5.456     1
+5.824     1
+3.360     1
+3.808     1
+3.888     1
+4.860     1
+1.593     1
+5.191     1
+3.900     1
+7.175     1
+4.437     1
+4.352     1
+4.205     1
+3.925     1
+4.272     1
+4.922     1
+6.765     1
+4.530     1
+4.000     1
+2.870     1
+3.948     1
+2.784     1
+5.568     1
+Name: alcohol, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}"
+id="DkzcN7vLqMtm" data-outputId="2639e41b-c496-4ec6-a6b1-9428b12bcc51">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,y<span class="op">=</span><span class="st">&quot;speeding&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="21">
+<pre><code>&lt;Axes: xlabel=&#39;alcohol&#39;, ylabel=&#39;speeding&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/56dfccb946ad79489e27d456327b294b9fff13d1.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:467}"
+id="u7szNcuIqf93" data-outputId="0f72c5f4-c508-4a44-a7df-11eb98cab907">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&quot;not_distracted&quot;</span>,y<span class="op">=</span><span class="st">&quot;no_previous&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+<pre><code>&lt;Axes: xlabel=&#39;not_distracted&#39;, ylabel=&#39;no_previous&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/e9e2ec94ada37eb84ba458278b657528d5bd59dd.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="23"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="EaUXE63hqgAS" data-outputId="59338897-61c1-4a96-c32f-83efa4717c8b">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&quot;not_distracted&quot;</span>,y<span class="op">=</span><span class="st">&quot;no_previous&quot;</span>,hue<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+<pre><code>&lt;Axes: xlabel=&#39;not_distracted&#39;, ylabel=&#39;no_previous&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/ce2d11415de148e07e04e3da192d494942c75f0e.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="lgoL6YfXrufS">
+<p>COUNT <strong>PLOT</strong></p>
+</div>
+<div class="cell code" data-execution_count="24"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}"
+id="E5bjzLLSqgDx" data-outputId="9ddf01d4-dff1-4202-8cae-eea257125148">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,data<span class="op">=</span>df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+<pre><code>&lt;Axes: xlabel=&#39;alcohol&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/ac113033ae7d8f1b8ce1d3f5557b7123b7cfc260.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="25"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:624}"
+id="bYR5tau6r4Q9" data-outputId="4dab8fae-ebfd-4b93-8fbc-17c3bc026640">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>sns.jointplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,data<span class="op">=</span>df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>&lt;seaborn.axisgrid.JointGrid at 0x7f0cf95eda20&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/551b85f9ae87c13bc20ecffaf94e6d4ed22719da.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="30"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}"
+id="ALDpY4Gbr4dh" data-outputId="7bde6f5e-945f-412b-c79d-6ac2936077a7">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;total&quot;</span>,y<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>,data<span class="op">=</span>df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="30">
+<pre><code>&lt;Axes: xlabel=&#39;total&#39;, ylabel=&#39;alcohol&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/da5a704e66fc38e30e050493f2558f7589776ea0.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="HJkdZgIbsb5N">
+<p><strong>Correlation graph</strong></p>
+</div>
+<div class="cell code" data-execution_count="31"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:323}"
+id="8uqikRYsr4gc" data-outputId="5ade3742-f63f-4d5e-a8d7-1d792071c844">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>corr<span class="op">=</span>df.corr()</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>corr</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-31-7d5195e2bf4d&gt;:1: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+  corr=df.corr()
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="31">
+
+  <div id="df-bcface39-5212-4d8d-bc8f-d1ccf0d6d2e3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total</th>
+      <th>speeding</th>
+      <th>alcohol</th>
+      <th>not_distracted</th>
+      <th>no_previous</th>
+      <th>ins_premium</th>
+      <th>ins_losses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>total</th>
+      <td>1.000000</td>
+      <td>0.611548</td>
+      <td>0.852613</td>
+      <td>0.827560</td>
+      <td>0.956179</td>
+      <td>-0.199702</td>
+      <td>-0.036011</td>
+    </tr>
+    <tr>
+      <th>speeding</th>
+      <td>0.611548</td>
+      <td>1.000000</td>
+      <td>0.669719</td>
+      <td>0.588010</td>
+      <td>0.571976</td>
+      <td>-0.077675</td>
+      <td>-0.065928</td>
+    </tr>
+    <tr>
+      <th>alcohol</th>
+      <td>0.852613</td>
+      <td>0.669719</td>
+      <td>1.000000</td>
+      <td>0.732816</td>
+      <td>0.783520</td>
+      <td>-0.170612</td>
+      <td>-0.112547</td>
+    </tr>
+    <tr>
+      <th>not_distracted</th>
+      <td>0.827560</td>
+      <td>0.588010</td>
+      <td>0.732816</td>
+      <td>1.000000</td>
+      <td>0.747307</td>
+      <td>-0.174856</td>
+      <td>-0.075970</td>
+    </tr>
+    <tr>
+      <th>no_previous</th>
+      <td>0.956179</td>
+      <td>0.571976</td>
+      <td>0.783520</td>
+      <td>0.747307</td>
+      <td>1.000000</td>
+      <td>-0.156895</td>
+      <td>-0.006359</td>
+    </tr>
+    <tr>
+      <th>ins_premium</th>
+      <td>-0.199702</td>
+      <td>-0.077675</td>
+      <td>-0.170612</td>
+      <td>-0.174856</td>
+      <td>-0.156895</td>
+      <td>1.000000</td>
+      <td>0.623116</td>
+    </tr>
+    <tr>
+      <th>ins_losses</th>
+      <td>-0.036011</td>
+      <td>-0.065928</td>
+      <td>-0.112547</td>
+      <td>-0.075970</td>
+      <td>-0.006359</td>
+      <td>0.623116</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bcface39-5212-4d8d-bc8f-d1ccf0d6d2e3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bcface39-5212-4d8d-bc8f-d1ccf0d6d2e3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bcface39-5212-4d8d-bc8f-d1ccf0d6d2e3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-ac0d1717-f6ab-41aa-b29d-18b11159d871">
+  <button class="colab-df-quickchart" onclick="quickchart('df-ac0d1717-f6ab-41aa-b29d-18b11159d871')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-ac0d1717-f6ab-41aa-b29d-18b11159d871 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="32"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:538}"
+id="cpi-KzjCr4jD" data-outputId="88ad745a-25cb-4174-92d7-2df3af46ee1b">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr,annot<span class="op">=</span><span class="va">True</span>,cmap<span class="op">=</span><span class="st">&quot;YlGnBu&quot;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="32">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_36e21c5e1d044146a1de09a5c3ceeda5/1ebd4f60be65de4da0ba97354bee14dac8564c66.png" /></p>
+</div>
+</div>
+<section id="inference" class="cell markdown" id="CVV2FjEht_Dy">
+<h1><strong>INFERENCE</strong></h1>
+</section>
+<div class="cell markdown" id="jHhVWR9at0AO">
+<ol>
+<li><strong>Total Column</strong>:
+<ul>
+<li>This column might represent some aggregated measure, possibly
+related to the total number of car crashes in a specific region or over
+a period. Without more context, it's challenging to provide a specific
+inference.</li>
+</ul></li>
+<li><strong>Speeding Column</strong>:
+<ul>
+<li>This column could represent the percentage or rate of car crashes
+involving speeding as a contributing factor.</li>
+<li>Inference: A higher value in this column may suggest a higher
+incidence of car crashes related to speeding.</li>
+</ul></li>
+<li><strong>Alcohol Column</strong>:
+<ul>
+<li>This column may indicate the percentage or rate of car crashes
+involving alcohol impairment.</li>
+<li>Inference: A higher value in this column may suggest a higher
+incidence of car crashes involving alcohol.</li>
+</ul></li>
+<li><strong>Not Distracted Column</strong>:
+<ul>
+<li>This column might represent the percentage or rate of car crashes
+where distraction was not a contributing factor.</li>
+<li>Inference: A higher value in this column may indicate that a
+significant portion of car crashes did not involve driver
+distraction.</li>
+</ul></li>
+<li><strong>No Previous Column</strong>:
+<ul>
+<li>This column's meaning is less clear without additional context, but
+it might relate to whether the drivers involved in the crashes had prior
+incidents.</li>
+<li>Inference: More information is needed to draw a specific
+inference.</li>
+</ul></li>
+<li><strong>Ins Premium Column</strong>:
+<ul>
+<li>This column might represent the average insurance premium for car
+owners in a particular region.</li>
+<li>Inference: Higher values in this column could imply higher insurance
+costs in areas with more car crashes.</li>
+</ul></li>
+<li><strong>Ins Losses Column</strong>:
+<ul>
+<li>This column could indicate the average insurance losses (claims)
+paid out in a specific region or for a certain group of car owners.</li>
+<li>Inference: Higher values in this column may indicate regions or
+groups with more frequent or severe car crashes.</li>
+</ul></li>
+<li><strong>Abbrev Column</strong>:
+<ul>
+<li>This column likely represents state abbreviations.</li>
+<li>Inference: It can be used for mapping the data to specific states,
+which can be helpful for regional analysis.</li>
+</ul></li>
+</ol>
+</div>
+</body>
+</html>
